@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>WorldCupElement</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <app-matches-by-country country="SUI"></app-matches-by-country>
+</body>
+
+<script>
+  setTimeout(() => {
+    var newElement = document.createElement('app-matches-by-country');
+    document.body.appendChild(newElement);
+    newElement.setAttribute('country', 'ger');
+  }, 2000);
+</script>
+
+</html>
